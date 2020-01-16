@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>/favicon.ico">
+  <script src='./js/JavascriptSubtitlesOctopus-dist/subtitles-octopus.js'></script>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='app'></div>
+  <video src="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4" id="player"
+    width="840" height="480" controls></video>
+  <script>
+    var video = document.getElementById("player");
+    window.SubtitlesOctopusOnLoad = function () {
+      var options = {
+        video: video,
+        subUrl: './1.ass',
+        debug: true,
+        workerUrl: './js/JavascriptSubtitlesOctopus-dist//subtitles-octopus-worker.js'
+      };
+      window.octopusInstance = new SubtitlesOctopus(options); // You can experiment in console
+    };
+    if (SubtitlesOctopus) {
+      SubtitlesOctopusOnLoad();
+    }
+  </script>
+</body>
+
+</html>
