@@ -1,11 +1,14 @@
 ## Demo - Electron.js + JavascriptSubtitlesOctopus
+2020-1-16
+* Electron.js 6.1.5
+* JavascriptSubtitlesOctopus 3.0.2
 
 ## Help debug:  
 
 https://github.com/Dador/JavascriptSubtitlesOctopus/issues/60
 
 
-## How to run 
+## Setup
 ```
 git clone https://github.com/1c7/Electron-JavascriptSubtitlesOctopus.git
 cd Electron-JavascriptSubtitlesOctopus/
@@ -13,7 +16,7 @@ npm install
 npm run dev
 ```
 
-## Error message
+## Error
 ![x](./error.jpg)
 
 ```
